@@ -1,18 +1,31 @@
-# high_performance_feed
+# Flutter High Performance Feed
 
-A new Flutter project.
+## Architecture
 
-## Getting Started
+State management is implemented using Riverpod.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Infinite scrolling
+- Pagination (10 items)
+- Pull to refresh
+- Hero animations
+- Detail screen
+- Optimistic likes
+- Offline revert
+- CachedNetworkImage
+- RepaintBoundary
+- Supabase backend integration
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Performance
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# Flutter_Assignment" 
+- RepaintBoundary used for feed cards
+- memCacheWidth used for image memory optimization
+- CachedNetworkImage used for caching
+- Pagination prevents loading all posts at once
+
+## Backend
+
+- Supabase Database
+- Supabase Storage
+- Supabase RPC toggle_like
